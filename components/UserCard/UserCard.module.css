@@ -1,0 +1,33 @@
+.cardContainer {
+  padding: 1rem;
+  margin-bottom: 2.5%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.clickable:hover {
+  border-color: rgb(223, 108, 0);
+  box-shadow: 0 0 8px rgb(218, 218, 218);
+  cursor: pointer;
+}
+.title {
+  font-weight: bold;
+}
+.cardContainer input {
+  border-color: rgb(223, 108, 0) !important ;
+  cursor: pointer;
+  height: 20px;
+  width: 40px !important;
+}
+.cardContainer input:checked {
+  background-color: rgb(223, 108, 0);
+  border-color: rgb(223, 108, 0);
+}
+.cardContainer input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(223, 108, 0, 25%);
+}
+.activeText {
+  font-weight: bold;
+}

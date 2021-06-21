@@ -1,0 +1,65 @@
+.loginContainer {
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  margin: 2rem auto;
+}
+.inputContainer{
+
+    margin: 0 auto;
+    width: 50%;
+}
+.loginContainer input {
+    width: 100%;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid #eee;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+.loginContainer input:focus {
+  outline: none;
+  border-color: rgb(223, 108, 0);
+}
+.loginContainer button {
+  display: block;
+  border: 1px solid rgb(223, 108, 0);
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(223, 108, 0);
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+}
+.loginContainer button span {
+  z-index: 2;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.loginContainer button::after {
+  transition: all 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(223, 108, 0);
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.loginContainer button:hover:after {
+    width: 100%;
+}
+.loginContainer button:hover span {
+  color: white;
+}
+.required{
+    color: rgb(224, 6, 6);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: block;
+}

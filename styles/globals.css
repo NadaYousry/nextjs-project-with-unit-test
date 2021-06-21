@@ -14,3 +14,40 @@ a {
 * {
   box-sizing: border-box;
 }
+h2 {
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  width: 40%;
+  margin: 0 auto 1.5rem auto;
+}
+h2:after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(223, 108, 0);
+  height: 2px;
+  width: 50px;
+}
+
+
+.imageContainer {
+  width: 80px;
+}
+.imageContainer img {
+  width: 100%;
+}
+.not-found{
+  
+  height: 80vh;
+}
+.not-found h3{
+  font-size:2.5rem;
+  font-weight: bolder;
+  
+}
+.not-found span{
+  color: rgb(223, 108, 0);
+}
